@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #54b7df;
+    }
+    
+    form {
+        background-color: #93ebee;
+        padding: 35px 25px;
+        border-radius: 25px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        max-width: 500px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 50%;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    
+    button[type="submit"] {
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 500;
+        background-color: #175ea4;
+        color: white;
+        width: 50%;
+        cursor: pointer;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+    <h1 align="center">FORM ĐĂNG KÝ THÔNG TIN</h1>
+    <form action="#" method="post">
+        <label for="username">Họ và tên:</label>
+        <input type="text" id="username" name="username" required /><br /><br />
+
+        <label for="password">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="tel">Số điện thoại:</label>
+        <input type="tel" id="tel" name="tel" required /><br /><br />
+
+        <label for="gender">Giới tính:</label><br />
+        <label><input type="radio" name="gender" value="male" required />Nam</label><br />
+        <label><input type="radio" name="gender" value="female"/>Nữ</label><br />
+        <label><input type="radio" name="gender" value="Other"/>Khác</label><br /><br />
+        <button type="submit">Gửi</button>
+    </form>
+</body>
+
+</html>
