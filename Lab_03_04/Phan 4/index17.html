@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Du Lịch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #4a3c2f;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 22px;
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 8px;
+            width: 400px;
+            height: auto;
+        }
+
+        .card p {
+            text-align: justify;
+        }
+
+        iframe {
+            display: block;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Đảm bảo bố cục không vỡ khi ảnh float */
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- Phần giới thiệu -->
+        <section class="card clearfix">
+            <h1>Nhà Thờ Đức Bà</h1>
+            <img src="../../image/Lab_03_04/NhaThoDucBa.jpg" alt="Nhà Thờ Đức Bà">
+            <p>Cafe bệt ở công viên đối diện Nhà Thờ Đức Bà là địa điểm tụ tập yêu thích của giới trẻ Sài Thành. Vào mỗi
+                buổi tối, khi ánh đèn đường bắt đầu được thắp sáng, những quán nước vỉa hè bắt đầu mở cửa đón khách.</p>
+            <p>Mặc dù chỉ có cafe, trà chanh, trà quất, các loại nước đơn giản kèm theo đĩa hướng dương nữa thôi là các
+                bạn
+                đã có đủ combo để có thể ngồi “chém gió” với hội bạn trước khu vực Nhà Thờ Đức Bà rồi. Địa điểm vui chơi
+                ở Sài
+                Gòn vào buổi tối này ngay tại trung tâm Quận 1, giá cả đồ uống hợp lý, không gian xanh mát mẻ xứng đáng
+                là điểm
+                đến lý tưởng cho buổi tối cuối tuần.</p>
+        </section>
+
+        <!-- Phần bản đồ -->
+        <aside class="card">
+            <h2>Vị trí của Nhà Thờ Đức Bà</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4111915954118!2d106.69644397465537!3d10.779785489369196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f37e6d82451%3A0xe84f59936ced5b45!2zTmjDoCB0aOG7nSDEkOG7qWMgQsOgIFPDoGkgR8Oybg!5e0!3m2!1svi!2s!4v1755788483642!5m2!1svi!2s"
+                width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </aside>
+    </main>
+</body>
+
+</html>
