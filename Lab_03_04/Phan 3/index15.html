@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Thanh Toán</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fdf5e6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .options-group {
+            margin-bottom: 15px;
+        }
+
+        .options-group input {
+            margin-right: 8px;
+        }
+
+        button {
+            background-color: #ff9800;
+            color: white;
+            font-size: 16px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+        }
+
+        button:hover {
+            background-color: #e68900;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>FORM THANH TOÁN ĐƠN HÀNG</h2>
+    <form action="#" method="post">
+        <label for="name">Họ và tên:<span style="color:red">*</span></label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="date">Ngày sinh:<span style="color:red">*</span></label>
+        <input type="date" id="date" name="date" required />
+
+        <label>Giới tính:<span style="color:red">*</span></label>
+        <div class="options-group">
+            <input type="radio" name="gender" value="Nam" required> Nam <br>
+            <input type="radio" name="gender" value="Nữ"> Nữ <br>
+            <input type="radio" name="gender" value="Khác"> Khác
+        </div>
+
+        <label for="address">Địa chỉ:<span style="color:red">*</span></label>
+        <input type="text" id="address" name="address" required />
+
+        <label>Chọn hình thức thanh toán:<span style="color:red">*</span></label>
+        <div class="options-group">
+            <input type="radio" name="payment" value="congthanhtoan" required> Cổng thanh toán <br>
+            <input type="radio" name="payment" value="vidientu"> Ví điện tử <br>
+            <input type="radio" name="payment" value="thietbithongminh"> Thiết bị thông minh <br>
+            <input type="radio" name="payment" value="the"> Thẻ ngân hàng
+        </div>
+
+        <button type="submit">Thanh toán</button>
+    </form>
+</body>
+
+</html>

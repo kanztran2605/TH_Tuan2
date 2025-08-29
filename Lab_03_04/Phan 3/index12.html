@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: hsl(192, 44%, 48%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    form {
+        background: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        width: 400px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #0073b1;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    .options-group input[type="radio"],
+    .options-group input[type="checkbox"] {
+        margin-right: 8px;
+        accent-color: #0073b1;
+    }
+
+    .options-group {
+        margin-bottom: 15px;
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 80px;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+
+    select {
+        width: 100%;
+        padding: 6px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        background-color: #0073b1;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    button:hover {
+        background-color: #005f85;
+    }
+</style>
+
+<body>
+    <form action="#" method="post">
+        <h2 align="center">KHẢO SÁT Ý KIẾN NGƯỜI DÙNG</h2>
+
+        <label>Bạn có hài lòng với dịch vụ của chúng tôi không? <span style="color:red">*</span></label>
+        <div class="options-group">
+            <input type="radio" name="satisfaction" value="Có">Có<br>
+            <input type="radio" name="satisfaction" value="Không" required>Không<br><br>
+        </div>
+
+        <label>Bạn thích những tính năng nào? (Chọn nhiều)</label>
+        <div class="options-group">
+            <input type="checkbox" name="features[]" value="Giao diện đẹp">Giao diện đẹp<br>
+            <input type="checkbox" name="features[]" value="Dễ sử dụng">Dễ sử dụng<br>
+            <input type="checkbox" name="features[]" value="Tốc độ nhanh">Tốc độ nhanh<br>
+        </div><br>
+
+        <label for="comments">Ý kiến khác:</label><br>
+        <textarea id="comments" name="comments" placeholder="Viết ý kiến của bạn..."></textarea><br>
+        <br>
+        <label for="rating">Đánh giá tổng thể: <span style="color:red">*</span></label>
+        <select id="rating" name="rating" required>
+            <option value="">--Chọn--</option>
+            <option value="1">1 - Rất tệ</option>
+            <option value="2">2 - Tệ</option>
+            <option value="3">3 - Bình thường</option>
+            <option value="4">4 - Tốt</option>
+            <option value="5">5 - Rất tốt</option>
+        </select><br><br>
+
+        <button type="submit" style="display:block; margin:auto;">Gửi khảo sát</button>
+    </form>
+</body>
+
+</html>

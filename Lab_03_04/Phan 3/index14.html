@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Gửi Phản Hồi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: azure;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form {
+            background: #fff;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            width: 320px;
+        }
+
+        .form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        textarea,
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 70px;
+        }
+
+        .stars {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+
+        .stars input {
+            display: none;
+        }
+
+        .stars label {
+            font-size: 28px;
+            color: #ccc;
+            cursor: pointer;
+            padding: 0 4px;
+        }
+
+        .stars input:checked~label,
+        .stars label:hover,
+        .stars label:hover~label {
+            color: gold;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #008ecc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <h2>FORM GỬI PHẢN HỒI</h2>
+        <form action="#" method="post">
+
+            <label>Đánh giá theo sao: <span style="color:red">*</span></label>
+            <div class="stars">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+            </div>
+
+            <label for="comments">Ý kiến khác:</label>
+            <textarea id="comments" name="comments" placeholder="Viết ý kiến của bạn..."></textarea>
+
+            <label for="email">Email liên hệ:<span style="color:red">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Gửi phản hồi</button>
+        </form>
+    </div>
+</body>
+
+</html>
